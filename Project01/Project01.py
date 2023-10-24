@@ -90,3 +90,16 @@ plt.plot(data_train_y, p(data_train_y), '#F8766D')
 plt.xlabel('Experimental LogS')
 plt.ylabel('Predict LogS')
 plt.show()
+
+
+plt.figure(figsize=(5, 5))
+plt.scatter(data_train_y, data_pred_rf_train, alpha=0.3)
+plt.title("Prediction by Random Forest")
+z = np.polyfit(data_train_y, data_pred_rf_train, 1)
+p = np.poly1d(z)
+
+# plt.plot(data_train_y, p(data_train_y), '#F8766D')
+plt.xlabel('Experimental LogS')
+plt.ylabel('Predict LogS')
+plt.grid()
+plt.show()
