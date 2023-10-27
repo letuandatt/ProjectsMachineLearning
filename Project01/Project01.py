@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.metrics import mean_squared_error, r2_score, f1_score
 
 data = pd.read_csv("https://raw.githubusercontent.com/dataprofessor/data/master/delaney_solubility_with_descriptors.csv")
 data_X = data.drop("logS", axis=1)
@@ -84,6 +84,7 @@ p = np.poly1d(z)
 plt.plot(data_train_y, p(data_train_y), '#F8766D')
 plt.xlabel('Experimental LogS')
 plt.ylabel('Predict LogS')
+plt.grid()
 plt.show()
 
 
@@ -93,11 +94,11 @@ plt.title("Prediction by K-Nearest Neighbors")
 z = np.polyfit(data_train_y, data_pred_knn_train, 1)
 p = np.poly1d(z)
 
-plt.plot(data_train_y, p(data_train_y), '#F8766D')
+# plt.plot(data_train_y, p(data_train_y), '#F8766D')
 plt.xlabel('Experimental LogS')
 plt.ylabel('Predict LogS')
+plt.grid()
 plt.show()
-
 
 plt.figure(figsize=(5, 5))
 plt.scatter(data_train_y, data_pred_rf_train, alpha=0.3)
