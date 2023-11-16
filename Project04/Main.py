@@ -31,6 +31,11 @@ plt.ylabel('Count')
 plt.title('Samples of class')
 plt.show()
 
+pie, texts, autotexts = plt.pie(counts, labels=classes, colors=colors, autopct='%1.1f%%', startangle=90)
+plt.legend(pie, classes, title="Classes", loc="center left", bbox_to_anchor=(1, 0, 0.5, 1))
+plt.title('Samples of class')
+plt.show()
+
 
 knn_acc, bayes_acc, tree_acc, gd_acc = tm.testing()
 
