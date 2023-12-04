@@ -3,9 +3,8 @@ import joblib as jl
 
 from sklearn.metrics import accuracy_score
 
+_, data_test_X, _, data_test_y = ld.hold_out()
 def testing():
-    data_train_X, data_test_X, data_train_y, data_test_y = ld.hold_out()
-
     knn_model = jl.load("knn_model.pkl")
     knn_pred = knn_model.predict(data_test_X)
     knn_acc = accuracy_score(knn_pred, data_test_y) * 100
@@ -22,4 +21,8 @@ def testing():
     gd_pred = gd_model.predict(data_test_X)
     gd_acc = accuracy_score(gd_pred, data_test_y) * 100
 
-    return knn_acc, bayes_acc, tree_acc, gd_acc
+    mlp_model = jl.load("MLPClassifier.pkl")
+    mlp_pred = mlp_model.predict(data_test_X)
+    mlp_acc = accuracy_score(mlp_pred, data_test_y) * 100
+
+    return knn_acc, bayes_acc, tree_acc, gd_acc, mlp_acc
