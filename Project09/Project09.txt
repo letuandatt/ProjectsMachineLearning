@@ -1,0 +1,242 @@
+LE TUAN DAT  |
+DEC - 03 - 23|
+--------------
+
+This dataset has 1100 lines and 20 columns.
+
+This dataset delves into the stress factors faced by students.
+    From psychological aspects like anxiety and self-esteem to academic pressures
+    and social dynamics, this collection offers a holistic view of the challenges
+    today's students encounter. Derived from a nationwide survey, it's a window into
+    the multifaceted world of student well-being.
+
+This dataset contains around 20 features that create the most impact on the Stress of a Student.
+The features are selected scientifically considering 5 major factors, they are Psychological, Physiological,
+Social, Environmental, and Academic Factors. Some of them are:
+    Psychological Factors => 'anxiety_level', 'self_esteem', 'mental_health_history', 'depression',
+    Physiological Factors => 'headache', 'blood_pressure', 'sleep_quality', 'breathing_problem
+    Environmental Factors => 'noise_level', 'living_conditions', 'safety', 'basic_needs',
+    Academic Factors => 'academic_performance', 'study_load', 'teacher_student_relationship', 'future_career_concerns',
+    Social Factor => 'social_support', 'peer_pressure', 'extracurricular_activities', 'bullying'
+
+Value of each column:
+    1. axiety_level: 22 values (0 -> 21)
+    2. self_esteem: 31 values (0 -> 30)
+    3. metal_health_history: 2 values (0 - 1)
+    4. depression: 28 values (0 -> 27)
+    5. headache: 6 values (0 -> 5)
+    6. blood_pressure: 3 values (1 -> 3)
+    7. sleep_quality: 6 values (0 -> 5)
+    8. breathing_problem: 6 values (0 -> 5)
+    9. living_conditions: 6 values (0 -> 5)
+    10. safety: 6 values (0 -> 5)
+    11. basic_needs: 6 values (0 -> 5)
+    12. academic_performance: 6 values (0 -> 5)
+    13. study_load: 6 values (0 -> 5)
+    14. teacher_student_relationship: 6 values (0 -> 5)
+    15. future_career_concerns: 6 values (0 -> 5)
+    16. social_support: 4 values (0 -> 3)
+    17. peer_pressure: 6 values (0 -> 5)
+    18. extracurricular_activities: 6 values (0 -> 5)
+    19. bullying: 6 values (0 -> 5)
+    20. stress_level: 3 values (0 -> 2) => Class
+
+Number samples of each column:
+    1.  axiety_level:
+        +   0: 29 (2,64%)
+        +   1: 46 (4,18%)
+        +   2: 46 (4,18%)
+        +   3: 48 (4,36%)
+        +   4: 33 (3%)
+        +   5: 40 (3,64%)
+        +   6: 52 (4,72%)
+        +   7: 51 (4,64%)
+        +   8: 44 (4%)
+        +   9: 60 (5,45%)
+        +   10: 63 (5,73%)
+        +   11: 54 (4,91%)
+        +   12: 56 (5,09%)
+        +   13: 67 (6,09%)
+        +   14: 51 (4,64%)
+        +   15: 51 (4,64%)
+        +   16: 45 (4,09%)
+        +   17: 47 (4,27%)
+        +   18: 55 (5%)
+        +   19: 61 (5,55%)
+        +   20: 40 (3,64%)
+        +   21: 61 (5,55%)
+    2.  self_esteem:
+        +   0: 24 (2,18%)
+        +   1: 28 (2,55%)
+        +   2: 21 (1,91%)
+        +   3: 25 (2,27%)
+        +   4: 19 (1,73%)
+        +   5: 19 (1,73%)
+        +   6: 31 (2,82%)
+        +   7: 28 (2,55%)
+        +   8: 26 (2,36%)
+        +   9: 25 (2,27%)
+        +   10: 21 (1,91%)
+        +   11: 37 (3,36%)
+        +   12: 23 (2,09%)
+        +   13: 32 (2,91%)
+        +   14: 21 (1,91%)
+        +   15: 50 (4,55%)
+        +   16: 37 (3,36%)
+        +   17: 40 (3,64%)
+        +   18: 24 (2,18%)
+        +   19: 28 (2,55%)
+        +   20: 36 (3,27%)
+        +   21: 38 (3,45%)
+        +   22: 27 (2,45%)
+        +   23: 45 (4,09%)
+        +   24: 30 (2,73%)
+        +   25: 83 (7,55%)
+        +   26: 58 (5,27%)
+        +   27: 59 (5,36%)
+        +   28: 53 (4,82%)
+        +   29: 52 (4,73%)
+        +   30: 60 (5,45%)
+    3.  metal_health_history:
+        +   0: 558 (50,73%)
+        +   1: 542 (49,27%)
+    4.  depression:
+        +   0: 44 (4%)
+        +   1: 36 (3,27%)
+        +   2: 36 (3,27%)
+        +   3: 47 (4,27%)
+        +   4: 35 (3,18%)
+        +   5: 43 (3,91%)
+        +   6: 36 (3,27%)
+        +   7: 42 (3,82%)
+        +   8: 49 (4,45%)
+        +   9: 46 (4,18%)
+        +   10: 66 (6%)
+        +   11: 46 (4,18%)
+        +   12: 63 (5,73%)
+        +   13: 63 (5,73%)
+        +   14: 57 (5,18%)
+        +   15: 21 (1,91%)
+        +   16: 16 (1,45%)
+        +   17: 30 (2,73%)
+        +   18: 41 (3,73%)
+        +   19: 29 (2,64%)
+        +   20: 33 (3%)
+        +   21: 28 (2,55%)
+        +   22: 36 (3,27%)
+        +   23: 27 (2,45%)
+        +   24: 34 (2,18%)
+        +   25: 27 (2,45%)
+        +   26: 33 (3%)
+        +   27: 36 (3,27%)
+    5.  headache:
+        +   0: 32 (2,91%)
+        +   1: 331 (30,09%)
+        +   2: 181 (16,45%)
+        +   3: 287 (26,09%)
+        +   4: 140 (12,73%)
+        +   5: 129 (11,73%)
+    6. blood_pressure:
+        +   1: 300 (27,27%)
+        +   2: 300 (27,27%)
+        +   3: 500 (45,45%)
+    7.  sleep_quality:
+        +   0: 34 (3,09%)
+        +   1: 328 (29,82%)
+        +   2: 188 (17,09%)
+        +   3: 170 (15,45%)
+        +   4: 188 (17,09%)
+        +   5: 192 (17,45%)
+    8.  breathing_problem:
+        +   0: 43 (3,91%)
+        +   1: 179 (16,27%)
+        +   2: 325 (29,55%)
+        +   3: 139 (12,64%)
+        +   4: 287 (26,09%)
+        +   5: 127 (11,55%)
+    9.  noise_level:
+        +   0: 36 (3,27%)
+        +   1: 188 (17,09%)
+        +   2: 313 (28,45%)
+        +   3: 289 (26,27%)
+        +   4: 137 (12,45%)
+        +   5: 137 (12,45%)
+    10. living_conditions:
+        +   0: 29 (2,64%)
+        +   1: 176 (16%)
+        +   2: 346 (31,45%)
+        +   3: 327 (29,73%)
+        +   4: 189 (17,18%)
+        +   5: 33 (3%)
+    11. safety:
+        +   0: 33 (3%)
+        +   1: 184 (16,73%)
+        +   2: 348 (31,64%)
+        +   3: 180 (16,36%)
+        +   4: 184 (16,73%)
+        +   5: 171 (15,54%)
+    12. basic_needs:
+        +   0: 40 (3,64%)
+        +   1: 173 (15,73%)
+        +   2: 335 (30,45%)
+        +   3: 190 (17,27%)
+        +   4: 173 (15,73%)
+        +   5: 189 (17,18%)
+    13. academic_performance:
+        +   0: 36
+        +   1: 188
+        +   2: 313
+        +   3: 289
+        +   4: 137
+        +   5: 137
+    14. study_load:
+        +   0: 37
+        +   1: 185
+        +   2: 333
+        +   3: 275
+        +   4: 142
+        +   5: 128
+    15. teacher_student_relationship:
+        +   0: 42
+        +   1: 190
+        +   2: 353
+        +   3: 183
+        +   4: 192
+        +   5: 140
+    16. future_career_concerns:
+        +   0: 30
+        +   1: 327
+        +   2: 199
+        +   3: 173
+        +   4: 185
+        +   5: 186
+    17. social_support:
+        +   0: 88
+        +   1: 412
+        +   2: 142
+        +   3: 458
+    18. peer_pressure:
+        +   0: 37
+        +   1: 181
+        +   2: 355
+        +   3: 172
+        +   4: 174
+        +   5: 181
+    19. extracurricular_activities:
+        +   0: 34
+        +   1: 184
+        +   2: 332
+        +   3: 178
+        +   4: 198
+        +   5: 174
+    20. bullying:
+        +   0: 39
+        +   1: 335
+        +   2: 167
+        +   3: 199
+        +   4: 187
+        +   5: 173
+    21. stress_level:
+        +   0: 373
+        +   1: 358
+        +   2: 369
