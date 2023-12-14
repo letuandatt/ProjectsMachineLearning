@@ -39,5 +39,5 @@ train_data['households'] = np.log(train_data['households'] + 1)
 # train_data.hist(figsize=(15, 8))
 # plt.show()
 
-train_data = train_data.join(pd.get_dummies(train_data.ocean_proximity).drop(['ocean_proximity'], axis=1))
+train_data = train_data.join(pd.get_dummies(train_data.ocean_proximity).drop(train_data.ocean_proximity, axis=1))
 print(train_data)

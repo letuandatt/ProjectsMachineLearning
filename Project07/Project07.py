@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sb
 
 from sklearn.preprocessing import LabelEncoder
-from sklearn.model_selection import train_test_split, KFold
+from sklearn.model_selection import KFold
 from sklearn.neighbors import KNeighborsClassifier, RadiusNeighborsClassifier
 from sklearn.naive_bayes import CategoricalNB
 from sklearn.tree import DecisionTreeClassifier
@@ -153,7 +153,7 @@ counts = [knn_avg // cnt, rnc_avg // cnt, bayes_avg // cnt, tree_avg // cnt, rd_
 
 data = pd.DataFrame({'Class': classes, 'Count': counts})
 
-ax = sb.barplot(x='Mô hình', y='Độ chính xác', data=data, palette='viridis', legend=False)
+ax = sb.barplot(x='Class', y='Độ chính xác', data=data, palette='viridis', legend=False)
 
 for p in ax.patches:
     ax.annotate(f'{p.get_height():.2f}', (p.get_x() + p.get_width() / 2., p.get_height()),

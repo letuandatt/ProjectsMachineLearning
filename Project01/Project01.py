@@ -74,7 +74,6 @@ df_models = pd.concat([lr_results, knn_results, rf_results], axis=0).reset_index
 print(df_models)
 
 # VISUALIZATION
-
 plt.figure(figsize=(5, 5))
 plt.scatter(data_train_y, data_pred_lr_train, alpha=0.3)
 plt.title("Prediction by LinearRegression")

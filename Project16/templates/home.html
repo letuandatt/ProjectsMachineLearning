@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="brandname" class="jumbotron text-center" style="font-size: 70px">
+                Machine Learning App with Flask
+            </div>
+            <h2 class="text-center" style="margin-bottom: 25px">Spam Detector For SMS Messages</h2>
+        </div>
+    </header>
+
+    <div class="ml-container text-center">
+        <form action="{{ url_for('predict')}}" method="POST">
+            <textarea name="message" rows="4" cols="50" placeholder="Enter Your Message Here" id="textarea"></textarea>
+            <br/>
+            <input type="submit" class="btn-info" value="Predict" style="margin-top: 10px">
+        </form>
+    </div>
+</body>
+</html>

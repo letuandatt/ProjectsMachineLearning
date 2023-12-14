@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="brandname" class="jumbotron text-center" style="font-size: 70px">
+                Machine Learning App with Flask
+            </div>
+            <h2 class="text-center">Spam Detector For SMS Messaages</h2>
+        </div>
+    </header>
+
+    <p style="color:blue; font-size:20px; text-align: center; margin-top: 10px">
+        <b>Results for Comment</b>
+    </p>
+
+    <div class="text-box results text-center">
+        {% if prediction == 1 %}
+        <h2 style="color:red;">Spam</h2>
+        {% elif prediction == 0 %}
+        <h2 style="color:blue;">Not a Spam (It is a Ham)</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
